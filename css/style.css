@@ -1,0 +1,33 @@
+.content {
+  padding: 50px;
+}
+.stars {
+  position: relative;
+  width: 150px;
+  height: 28px;
+  margin-left: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.stars .color {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: blue;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.stars .mask {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/star-mask.png) no-repeat center center;
+  background-size: cover;
+}

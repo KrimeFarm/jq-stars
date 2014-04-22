@@ -7,7 +7,7 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          "js/h-slider.js": ["coffeescript/jq-stars.coffee"]
+          "js/jq-stars.js": ["coffeescript/jq-stars.coffee"]
           "js/main.js": ["coffeescript/main.coffee"]
 
     # Compile Less

@@ -10,7 +10,7 @@ $.fn.extend
 
     settings = $.extend settings, options
 
-    # Simple logger.
+    # Logger.
     log = (msg) ->
       console?.log msg if settings.debug
 
@@ -24,7 +24,7 @@ $.fn.extend
       if !dataAssign?
         $color.css "margin-left", "#{stars}%"
 
-      if dataAssign?
+      else if dataAssign?
         $this.css "cursor", "pointer"
         $this.on "click", (e) ->
 
