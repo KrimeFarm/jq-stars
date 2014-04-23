@@ -65,11 +65,17 @@ The relative HTML and Less/CSS is pretty straight forward, you can manipulate it
   }
 }
 ```
+
+<br>
+<br>
+
 ---
 
-# Options
+<br>
 
-**jqStars plugin options**
+## Options
+
+### jqStars plugin options
 
 ```coffee
 $(".stars").jqStars
@@ -80,7 +86,8 @@ $(".stars").jqStars
     console.log "Before the plugin is started" # a function to start before the main plugin function is callled
 return
 ```
-**Data Attributes**
+
+### Data Attributes
 
 By default the plugin start as a display rating one, which basically means that is used to display a value that needs to be inside the **data attribute** `data-stars` in the following way:
 
@@ -93,7 +100,7 @@ By default the plugin start as a display rating one, which basically means that 
 
 The value needs to be recovered by you from a DB with any backend you have supporting your web application, like say PHP or .NET.
 
-**`data-assign-stars`**
+### `data-assign-stars`
 
 ```html
 <div class="stars" data-assign-stars>
@@ -103,11 +110,6 @@ The value needs to be recovered by you from a DB with any backend you have suppo
 ```
 
 Using the `data-assign-stars` transform the plugin from a rating visualization to a rating assignation one, and stores the user assigned value into a `data-stars-recived` data attribute that is ready to be recovered with jQuery `.attr()` function and placed in your database with Ajax.
-
-## TODO
-
-- [ ] Better documentation
-- [ ] Better plugin representation
 
 ## LICENSE
 
