@@ -5,8 +5,8 @@ $.fn.extend
     settings =
       debug: false
       round: 20
-      callback: () ->
       callbefore: () ->
+      callback: () ->
 
     settings = $.extend settings, options
 
